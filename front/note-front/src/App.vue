@@ -1,32 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <!-- <Home /> -->
+    <div>
+      <button @click="onNavigateToCreateFlow()">Create Note</button>
+       <!-- <router-link to="/create">Create Note</router-link> -->
     </div>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// import Home from './views/Home'
 
-#nav {
-  padding: 30px;
+export default {
+  // components: { Home }
+  methods: {
+    onNavigateToCreateFlow() {
+      this.$router.push({
+        path: `/create`
+      })
+    }
+  }
 }
+</script>
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
