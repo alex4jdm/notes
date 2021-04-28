@@ -2,14 +2,14 @@
   <div class="home">
     <div>
       <h4>Note Title</h4>
-      <input v-model="form.title" type="text" />
+      <b-form-input v-model="form.title" type="text" />
     </div>
     <div>
       <h4>Note Body</h4>
-      <input v-model="form.body" type="text" />
+      <b-form-input v-model="form.body" type="text" />
     </div>
     <div class="create-flow-button-submit">
-      <button :disabled="!form.title || !form.body" @click="onSubmitForm">Submit</button>
+      <b-button :disabled="!form.title || !form.body" @click="onSubmitForm">Submit</b-button>
     </div>
   </div>
 </template>
