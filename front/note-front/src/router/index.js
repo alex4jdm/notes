@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import FlowCreateNote from '../views/FlowCreateNote'
+import Home from '../views/Home'
 
 Vue.use(VueRouter)
 
@@ -10,6 +11,11 @@ const routes = [
     name: 'FlowCreateNote',
     component: FlowCreateNote
   },
+  {
+    path: '/',
+    name: 'home',
+    component: Home
+  }
 ]
 
 const router = new VueRouter({
