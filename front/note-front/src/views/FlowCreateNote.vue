@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div>
-      <h4>Note Title</h4>
+      <h3>Note Title</h3>
       <b-form-input v-model="form.title" type="text" />
     </div>
     <div>

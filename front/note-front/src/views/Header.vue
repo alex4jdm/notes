@@ -1,6 +1,6 @@
 <template>
   <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">Notes App</b-navbar-brand>
+    <b-navbar-brand href="/">Notes App</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -10,7 +10,7 @@
       <b-navbar-nav class="ml-auto">
 
         <b-nav-item-dropdown text="Notes" right>
-          <b-dropdown-item href="#">Create</b-dropdown-item>
+          <b-dropdown-item href="/create">Create</b-dropdown-item>
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown right>
